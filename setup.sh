@@ -9,6 +9,7 @@ sed -i '/^server/d' haproxy/haproxy.cfg
 cd website
 for x in {1..3}; do
    cat conf/default.conf |sed "s/XXXX/8${x}/" > default.conf
+   sed -i "s/server[[:alnum:]]/server${x}/" static-html-directory/index.html
    echo ""
    docker build -t ${name}-nginx-${x} .
    [  "$(docker ps -a | grep ${name}-nginx-${x})" ] && docker rm ${name}-nginx-${x} --force
