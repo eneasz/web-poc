@@ -38,3 +38,9 @@ To create number of backend instances use setup script
 ### How to access website
   - Direct access  on local resource http://localhost/
   - Via LB http://localhost:8020/
+
+## Cleanup
+ When done with testing, you can remove containers and images by running cleanup script
+```sh
+./cleanup.sh
+```
