@@ -1,4 +1,4 @@
-![N|Docker](https://dt-cdn.net/assets/images/content/resources/docker-c-0e3b80d791.png)
+![N|Docker](https://cdn-images-1.medium.com/max/1200/1*P1Jrr84Hq9L1wzipxC1Rdg.png)
 
 ## Intro
 This is a quick poc for hosting a static website inside a Docker continer which is run locally.
